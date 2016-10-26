@@ -42,6 +42,7 @@ int main(int argc, char ** argv)
 		cv::Mat im(Options::get().height, Options::get().width, CV_8UC3, image);
 		cv::Mat dp(Options::get().height, Options::get().width, CV_16U, depth);
 
+		cv::normalize(dp, dp, 0, 255, cv::NORM_MINMAX, 0);
 		cv::cvtColor(dp, dp, CV_GRAY2RGB);
 
 		cv::imshow("Image", im);
