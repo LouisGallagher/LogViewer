@@ -31,11 +31,11 @@ class Options
 			fps(30),
 			compressed(0)
 			{
-				po::options_description desc("LogViewer, A tool for playing back (dot)klg files.\n Options");
+				po::options_description desc("LogViewer, A tool for playing back klg files.\n Options");
 				
 				desc.add_options()
-					("help,h", "print help message")
-					("logfile,l", po::value<std::string>(), "log to play back");
+					("help,h", "print this help message.")
+					("logfile,l", po::value<std::string>(), "klg log to play back.");
 
 				po::variables_map vm;
 				po::store(po::parse_command_line(argc, argv, desc), vm);
