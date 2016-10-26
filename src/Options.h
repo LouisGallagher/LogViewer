@@ -35,7 +35,7 @@ class Options
 				
 				desc.add_options()
 					("help,h", "print this help message.")
-					("logfile,l", po::value<std::string>(), "klg log to play back.");
+					("logfile,l", po::value<std::string>(), "path of klg log to play back.");
 
 				po::variables_map vm;
 				po::store(po::parse_command_line(argc, argv, desc), vm);
