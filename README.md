@@ -1,3 +1,3 @@
 # LogViewer
 
-A gui for viewing .klg logs captured with Logger2.
+A tool for playing back klg logs captured with Logger2.
